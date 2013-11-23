@@ -1,4 +1,4 @@
-gameGrid
+sg - Square Games
 ========
 
-Simple utilities for making grid-based canvas games
+Simple utilities for making grid-based canvas games.
