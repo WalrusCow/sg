@@ -110,5 +110,16 @@ define(function() {
 
   };
 
+  sg.copyPoint = function(pt) {
+    return { x: pt.x, y: pt.y };
+  }
+
+  sg.addPoints = function(pt1, pt2) {
+    return {
+      x: pt1.x + pt2.x,
+      y: pt1.y + pt2.y
+    };
+  }
+
   return sg;
 });
