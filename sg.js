@@ -115,6 +115,7 @@ define(function() {
   };
 
   sg.addPoints = function(pt1, pt2) {
+    /* Return a new point by summing the coordinates of the input points. */
     return {
       x: pt1.x + pt2.x,
       y: pt1.y + pt2.y
@@ -122,7 +123,13 @@ define(function() {
   };
 
   sg.pointsEqual = function(pt1, pt2) {
+    /* Checks if points are equal. */
     return (pt1.x === pt2.x) && (pt1.y === pt2.y);
+  };
+
+  sg.randInt = function(min, max) {
+    /* Generate a random integer in the interval [min, max). */
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   };
 
   return sg;
